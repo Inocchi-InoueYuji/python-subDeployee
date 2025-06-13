@@ -4,7 +4,6 @@ from .models import Book
 from .serializers import BookSerializer
 from .filters import BookFilter
 
-
 class BookViewSet(viewsets.ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
